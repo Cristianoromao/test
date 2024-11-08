@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Notas - Turma 2, 10ª Classe</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Certifique-se de que seu CSS está correto -->
+</head>
+<body>
+    <h1>Formulário de Notas</h1>
+    <p class="motivacional">Preencha o formulário abaixo com as suas notas para calcular a média geral.</p>
+
+    <form id="form-notas">
+        <div class="campo">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="numero">Número de Aluno:</label>
+            <input type="number" id="numero" name="numero" required>
+        </div>
+
+            <legend>Notas</legend>
+            
+        <fieldset>
+            <div class="campo">
+                <label for="lingua">Nota em Língua Portuguesa:</label>
+                <input type="number" id="lingua" name="lingua" step="0.1" required>
+            </div>
+
+            <div class="campo">
+                <label for="matematica">Nota em Matemática:</label>
+                <input type="number" id="matematica" name="matematica" step="0.1" required>
+            </div>
+
+            <div class="campo">
+                <label for="ingles">Nota em Inglês:</label>
+                <input type="number" id="ingles" name="ingles" step="0.1" required>
+            </div>
+
+            <div class="campo">
+                <label for="tic">Nota em TIC:</label>
+                <input type="number" id="tic" name="tic" step="0.1" required>
+            </div>
+
+            <div class="campo">
+                <label for="tlp">Nota em TLP:</label>
+                <input type="number" id="tlp" name="tlp" step="0.1" required>
+            </div>
+
+            <div class="campo">
+                <label for="electrotecnia">Nota em Eletrotecnia:</label>
+                <input type="number" id="electrotecnia" name="electrotecnia" step="0.1" required>
+            </div>
+
+            <div class="campo">
+                <label for="fisica">Nota em Física:</label>
+                <input type="number" id="fisica" name="fisica" step="0.1" required>
+            </div>
+
+            <!-- Adicionando as disciplinas faltantes -->
+            <div class="campo">
+                <label for="quimica">Nota em Química:</label>
+                <input type="number" id="quimica" name="quimica" step="0.1" required>
+            </div>
+
+            <div class="campo">
+                <label for="educacaoFisica">Nota em Educação Física:</label>
+                <input type="number" id="educacaoFisica" name="educacaoFisica" step="0.1" required>
+            </div>
+
+            <div class="campo">
+                <label for="seac">Nota em SEAC:</label>
+                <input type="number" id="seac" name="seac" step="0.1" required>
+            </div>
+        </fieldset>
+
+        <button type="button" onclick="calcularMedia()">Calcular Média</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
